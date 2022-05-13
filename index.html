@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Web</title>
     <style>
         html {
             background-color: aquamarine;
@@ -78,7 +78,7 @@
             dt.innerHTML = `当前时间为：${years}年${month + 1}月${day}日`;
             time.innerHTML = `${hours}时${minutes}分${seconds}秒`;
 
-            console.log((finaltime - nowtime) / 1000 / 60 / 60 / 24);
+            // console.log((finaltime - nowtime) / 1000 / 60 / 60 / 24);
             let dayline = Math.floor((finaltime - nowtime) / 1000 / 60 / 60 / 24);
             let hourline = Math.floor((finaltime - nowtime) / 1000 / 60 / 60 - dayline * 24);
             let minuline = Math.floor((finaltime - nowtime) / 1000 / 60 - ((dayline * 24 * 60) + (hourline * 60)));
